@@ -8,11 +8,11 @@ export function ServicesBento() {
     <section id="services" className="max-w-[1400px] mx-auto px-6 mb-24">
       <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
         <h2 className="text-4xl lg:text-5xl font-display font-medium tracking-tight text-neutral-900 max-w-xl">
-          Holistic Digital <br />
-          Engineering
+          Full-Service <br />
+          Marketing
         </h2>
         <p className="text-neutral-500 max-w-sm text-sm text-right md:text-left">
-          From strategy to execution, we optimize every layer of your go-to-market operations.
+          From brand strategy to campaign execution, we cover every touchpoint of your marketing journey.
         </p>
       </div>
 
@@ -25,7 +25,7 @@ export function ServicesBento() {
             icon={service.icon}
             variant={service.variant}
             size={service.size}
-            codeBlock={service.codeBlock}
+            brandShowcase={service.brandShowcase}
             visual={service.visual}
             chart={service.chart}
           />

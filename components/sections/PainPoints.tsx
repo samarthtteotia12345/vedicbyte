@@ -7,10 +7,10 @@ export function PainPoints() {
     <section className="max-w-[1400px] mx-auto px-6 py-20 lg:py-28">
       <div className="text-center max-w-2xl mx-auto mb-16">
         <h2 className="text-3xl lg:text-4xl font-display font-medium tracking-tight text-neutral-900 mb-4">
-          Is your tech stack a <span className="text-neutral-400">liability?</span>
+          Is your marketing <span className="text-neutral-400">actually working?</span>
         </h2>
         <p className="text-neutral-500">
-          Legacy systems and siloed data create friction that slows down innovation.
+          Most brands struggle with the same challenges. Here's what's holding you back.
         </p>
       </div>
 

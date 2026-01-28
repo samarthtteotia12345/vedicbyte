@@ -15,9 +15,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Vedicbyte - AI-Powered GTM Operations",
+  title: "Vedicbyte - Marketing That Moves Markets",
   description:
-    "Accelerating growth through intelligent technology. We build embedded GTM teams, AI-powered workflows, and modern cloud infrastructure.",
+    "Strategic marketing that builds brands and drives revenue. We craft compelling stories, create memorable campaigns, and deliver measurable growth.",
 };
 
 export default function RootLayout({

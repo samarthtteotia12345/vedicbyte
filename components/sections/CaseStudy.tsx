@@ -40,60 +40,63 @@ export function CaseStudy() {
             </div>
           </div>
 
-          {/* Code/Visual Block */}
+          {/* Marketing Dashboard */}
           <div className="relative lg:translate-y-8 lg:translate-x-8">
-            <div className="bg-[#0f0f0f] border border-neutral-800 rounded-tl-2xl rounded-tr-2xl shadow-2xl overflow-hidden backdrop-blur-xl">
-              <div className="flex items-center px-4 py-3 border-b border-neutral-800 bg-[#0f0f0f]">
-                <div className="flex gap-2 mr-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-green-500/80" />
+            <div className="bg-white border border-neutral-200 rounded-2xl shadow-2xl overflow-hidden">
+              <div className="flex items-center justify-between px-5 py-4 border-b border-neutral-100 bg-neutral-50">
+                <div className="flex items-center gap-2">
+                  <Icon icon="solar:chart-2-bold" className="text-vedic-lime" width={20} />
+                  <span className="text-sm font-medium text-neutral-800">
+                    Campaign Analytics
+                  </span>
                 </div>
-                <div className="text-xs text-neutral-500 font-mono">
-                  revenue_dashboard.tsx
-                </div>
+                <span className="text-xs text-neutral-500">This Quarter</span>
               </div>
-              <div className="p-6 font-mono text-xs leading-relaxed text-neutral-400">
-                <div className="flex gap-4 mb-4 pb-4 border-b border-white/5">
+              <div className="p-5">
+                <div className="flex gap-4 mb-5">
                   {CASE_STUDY.dashboard.stats.map((stat) => (
-                    <div key={stat.label} className="w-1/2 bg-white/5 rounded p-3">
-                      <div className="text-[10px] text-neutral-500 uppercase mb-1">
+                    <div key={stat.label} className="flex-1 bg-neutral-50 rounded-xl p-4">
+                      <div className="text-xs text-neutral-500 mb-1">
                         {stat.label}
                       </div>
-                      <div className="text-xl text-white font-bold">
+                      <div className="text-2xl font-bold text-neutral-900">
                         {stat.value}
                       </div>
                       <div
-                        className={`text-[10px] mt-1 ${
+                        className={`text-xs mt-1 font-medium ${
                           stat.changeColor === "lime"
-                            ? "text-vedic-lime"
-                            : "text-green-500"
+                            ? "text-green-600"
+                            : "text-green-600"
                         }`}
                       >
-                        {stat.changeColor === "lime" ? "↑" : ""} {stat.change}
+                        ↑ {stat.change}
                       </div>
                     </div>
                   ))}
                 </div>
-                <div className="space-y-2">
-                  {CASE_STUDY.dashboard.logs.map((log, i) => (
+                <div className="space-y-3">
+                  {CASE_STUDY.dashboard.activities.map((activity, i) => (
                     <div
                       key={i}
-                      className={`flex justify-between items-center p-2 rounded ${
-                        log.status === "success"
-                          ? "bg-green-500/10 border border-green-500/20"
-                          : "hover:bg-white/5"
-                      }`}
+                      className="flex items-center justify-between p-3 rounded-lg bg-neutral-50 border border-neutral-100"
                     >
-                      <span
-                        className={
-                          log.status === "success" ? "text-green-400" : ""
-                        }
-                      >
-                        {log.status === "success" ? "✓ " : ""}
-                        {log.message}
-                      </span>
-                      <span className="text-[10px]">{log.time}</span>
+                      <div className="flex items-center gap-3">
+                        <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
+                          activity.type === "campaign"
+                            ? "bg-purple-100 text-purple-600"
+                            : "bg-blue-100 text-blue-600"
+                        }`}>
+                          <Icon
+                            icon={activity.type === "campaign"
+                              ? "solar:rocket-linear"
+                              : "solar:videocamera-record-linear"
+                            }
+                            width={16}
+                          />
+                        </div>
+                        <span className="text-sm text-neutral-700">{activity.message}</span>
+                      </div>
+                      <span className="text-xs text-green-600 font-medium">{activity.result}</span>
                     </div>
                   ))}
                 </div>

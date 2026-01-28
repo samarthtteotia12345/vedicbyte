@@ -1,95 +1,95 @@
-// Site content and copy - B2B Technology Services focused
+// Site content and copy - Marketing Agency focused
 
 export const SITE_CONFIG = {
   name: "Vedicbyte",
-  tagline: "AI-Powered GTM Operations",
+  tagline: "Marketing That Moves Markets",
   description:
-    "Accelerating growth through intelligent technology. We build embedded GTM teams, AI-powered workflows, and modern cloud infrastructure.",
+    "Strategic marketing that builds brands and drives revenue. We craft compelling stories, create memorable campaigns, and deliver measurable growth.",
 };
 
 export const NAV_LINKS = [
-  { label: "Capabilities", href: "#services" },
-  { label: "Case Studies", href: "#work" },
-  { label: "Methodology", href: "#method" },
+  { label: "Services", href: "#services" },
+  { label: "Our Work", href: "#work" },
+  { label: "About", href: "#about" },
 ];
 
 export const HERO_CONTENT = {
-  badge: "AI-Powered GTM Operations",
+  badge: "Full-Service Marketing Agency",
   headline: {
-    line1: "Accelerating",
-    line2: "Growth",
-    line3: "Through Intelligent Technology.",
-    highlight: "Growth",
+    line1: "Building",
+    line2: "Brands",
+    line3: "That People Remember.",
+    highlight: "Brands",
   },
   description:
-    "Vedicbyte connects the dots between embedded GTM operations, AI-powered automation, and data-driven performance marketing to fuel your revenue engine.",
-  primaryCTA: "Audit Your Stack",
-  secondaryCTA: "Explore Services",
+    "Vedicbyte transforms ambitious companies into market leaders. We blend creative strategy, compelling storytelling, and data-driven campaigns to make your brand unforgettable.",
+  primaryCTA: "Start Your Project",
+  secondaryCTA: "View Our Work",
 };
 
 export const HERO_CARDS = [
   {
-    icon: "solar:cpu-bolt-linear",
-    title: "AI Workflow Engine",
-    status: "Processing",
+    icon: "solar:star-bold",
+    title: "Brand Awareness",
+    status: "Growing",
     statusColor: "green",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600",
     borderColor: "border-purple-100",
     metric: {
-      label: "Tasks Automated",
-      value: "2.4K",
-      change: "+34%",
+      label: "Reach This Month",
+      value: "2.4M",
+      change: "+67%",
     },
   },
   {
-    icon: "solar:chart-2-linear",
-    title: "Pipeline Velocity",
+    icon: "solar:heart-linear",
+    title: "Audience Engagement",
     status: "Real-time",
     statusColor: "neutral",
     bgColor: "bg-[#D4FF33]/20",
     iconColor: "text-neutral-800",
     borderColor: "border-[#D4FF33]/40",
     metric: {
-      label: "Conversion Rate",
-      value: "4.8%",
-      change: "+12%",
+      label: "Engagement Rate",
+      value: "8.2%",
+      change: "+24%",
     },
   },
   {
-    icon: "solar:link-circle-linear",
-    title: "CRM Integration",
-    status: "0.02s latency",
+    icon: "solar:graph-up-linear",
+    title: "Campaign Performance",
+    status: "Optimizing",
     statusColor: "neutral",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600",
     borderColor: "border-blue-100",
-    flow: ["HubSpot", "Salesforce"],
+    flow: ["Creative", "Launch", "Results"],
   },
 ];
 
 export const PAIN_POINTS = [
   {
-    icon: "solar:danger-triangle-linear",
-    title: "Fragmented Tech Stacks",
+    icon: "solar:eye-closed-linear",
+    title: "Invisible in Your Market",
     description:
-      "Your CRM doesn't talk to marketing. Marketing doesn't talk to sales. Data silos cost you deals every day.",
+      "Your competitors are everywhere while your brand stays hidden. You need a presence that demands attention and earns recognition.",
     bgColor: "bg-rose-50",
     iconColor: "text-rose-500",
   },
   {
-    icon: "solar:link-broken-linear",
-    title: "Manual Process Bottlenecks",
+    icon: "solar:chat-square-like-linear",
+    title: "Messages That Don't Land",
     description:
-      "Your team spends 60% of their time on repetitive tasks that should be automated. We fix that.",
+      "You're talking, but nobody's listening. Your marketing lacks the story and strategy to truly connect with your audience.",
     bgColor: "bg-amber-50",
     iconColor: "text-amber-500",
   },
   {
-    icon: "solar:blind-linear",
-    title: "Blind Attribution",
+    icon: "solar:money-bag-linear",
+    title: "Spending Without Returns",
     description:
-      "You're spending on ads but can't trace ROI to revenue. Multi-touch attribution reveals the truth.",
+      "Marketing budget disappears with nothing to show for it. You need campaigns that actually drive leads and revenue.",
     bgColor: "bg-indigo-50",
     iconColor: "text-indigo-500",
   },
@@ -97,118 +97,108 @@ export const PAIN_POINTS = [
 
 export const SERVICES = [
   {
-    id: "gtm-operations",
-    title: "Go-to-Market Operations",
+    id: "brand-strategy",
+    title: "Brand Strategy & Identity",
     description:
-      "Embedded GTM teams that integrate with your organization. We build RevOps infrastructure, sales enablement systems, and pipeline automation.",
-    icon: "solar:users-group-rounded-linear",
+      "We craft distinctive brand identities that stand out in crowded markets. From positioning to visual identity, we build brands that resonate and endure.",
+    icon: "solar:palette-linear",
     variant: "dark" as const,
     size: "tall" as const,
-    codeBlock: {
-      lines: [
-        { text: 'workflow "lead_qualification" {', color: "blue" as const },
-        { text: '  trigger = "form_submission"', color: "orange" as const, indent: 1 },
-        { text: "  score_threshold = 75", color: "lime" as const, indent: 1 },
-        { text: '  route_to = "enterprise_team"', color: "orange" as const, indent: 1 },
-        { text: "  auto_enrich = true", color: "lime" as const, indent: 1 },
-        { text: "}", color: "blue" as const },
-        { text: "# Routing leads...", color: "muted" as const, pulse: true },
-      ],
-    },
+    brandShowcase: true,
   },
   {
-    id: "ai-solutions",
-    title: "AI-Powered Solutions",
+    id: "content-marketing",
+    title: "Content & Storytelling",
     description:
-      "Intelligent workflows that learn and adapt. From predictive lead scoring to automated content generation, we deploy AI where it drives measurable ROI.",
-    icon: "solar:magic-stick-3-linear",
+      "Compelling narratives that captivate your audience. We create content strategies and stories that build trust, drive engagement, and convert readers into customers.",
+    icon: "solar:pen-new-square-linear",
     variant: "light" as const,
     size: "wide" as const,
-    visual: "ai-flow",
+    visual: "content-flow",
   },
   {
-    id: "performance-marketing",
-    title: "Performance Marketing",
+    id: "digital-advertising",
+    title: "Digital Advertising",
     description:
-      "Data-driven campaigns with full-funnel attribution. We optimize CAC, track LTV, and prove ROI on every dollar spent.",
+      "Strategic campaigns across search, social, and display that maximize your marketing spend and deliver measurable results.",
     icon: "solar:graph-up-linear",
     variant: "accent" as const,
     size: "normal" as const,
     chart: true,
   },
   {
-    id: "cloud-transformation",
-    title: "Cloud Transformation",
+    id: "social-media",
+    title: "Social Media Marketing",
     description:
-      "Modern infrastructure that scales. Kubernetes, serverless, and event-driven architectures built for growth.",
-    icon: "solar:cloud-storage-linear",
+      "Build communities, spark conversations, and grow your following with authentic social strategies that amplify your brand voice.",
+    icon: "solar:share-circle-linear",
     variant: "outline" as const,
     size: "normal" as const,
   },
 ];
 
 export const CASE_STUDY = {
-  badge: "Case Study: B2B SaaS Growth",
-  title: "From scattered tools to unified revenue engine.",
+  badge: "Featured Project",
+  title: "From unknown startup to industry leader.",
   description:
-    "How we helped a B2B SaaS company increase pipeline velocity by 3x while reducing CAC by 40% through integrated GTM operations.",
+    "How we helped a challenger brand break through the noise, build a loyal following, and become the most recognized name in their category.",
   metrics: [
-    { value: "3x", label: "Pipeline Velocity" },
-    { value: "-40%", label: "Customer Acquisition Cost" },
+    { value: "340%", label: "Brand Awareness Growth" },
+    { value: "5x", label: "Lead Generation Increase" },
   ],
   dashboard: {
     stats: [
       {
-        label: "Marketing Qualified Leads",
-        value: "847",
-        change: "+28% vs last month",
+        label: "Monthly Impressions",
+        value: "4.2M",
+        change: "+156% vs last quarter",
         changeColor: "lime",
       },
       {
-        label: "Sales Cycle",
-        value: "21 days",
-        change: "-8 days avg",
+        label: "Qualified Leads",
+        value: "847",
+        change: "+89% vs last quarter",
         changeColor: "green",
       },
     ],
-    logs: [
+    activities: [
       {
-        status: "success",
-        message: "Lead scoring model deployed",
-        time: "10:42 AM",
+        type: "campaign",
+        message: "Summer campaign launched",
+        result: "2.1M reach in 48 hours",
       },
       {
-        status: "info",
-        message: "Syncing HubSpot contacts...",
-        time: "10:41 AM",
+        type: "content",
+        message: "Brand video series",
+        result: "12K shares, 890K views",
       },
     ],
   },
 };
 
 export const CTA_CONTENT = {
-  headline: "Ready to turbocharge your growth engine?",
-  primaryCTA: "Book Strategy Call",
-  secondaryCTA: "View Pricing",
+  headline: "Ready to build a brand people love?",
+  primaryCTA: "Let's Talk Strategy",
+  secondaryCTA: "See Case Studies",
 };
 
 export const FOOTER = {
   description:
-    "AI-powered GTM operations agency specializing in revenue operations, performance marketing, and cloud transformation.",
+    "Full-service marketing agency specializing in brand strategy, content creation, digital advertising, and social media marketing.",
   services: [
-    "GTM Operations",
-    "AI Solutions",
-    "Performance Marketing",
-    "Cloud Transformation",
+    "Brand Strategy",
+    "Content Marketing",
+    "Digital Advertising",
+    "Social Media",
   ],
   company: ["About", "Careers", "Blog", "Contact"],
   copyright: `© ${new Date().getFullYear()} Vedicbyte. All rights reserved.`,
 };
 
 export const LOGO_MARQUEE = [
-  { icon: "solar:atom-linear", name: "SYNTHESIS" },
-  { icon: "solar:box-linear", name: "BLOKCHAIN" },
-  { icon: "solar:infinity-linear", name: "ETERNITY" },
-  { icon: "solar:planet-linear", name: "ORBITAL" },
-  { icon: "solar:ufo-linear", name: "NEBULA" },
+  { icon: "solar:buildings-2-linear", name: "LUXE & CO" },
+  { icon: "solar:leaf-linear", name: "EVERGREEN" },
+  { icon: "solar:cup-star-linear", name: "STELLARIS" },
+  { icon: "solar:crown-linear", name: "MONARCH" },
+  { icon: "solar:diamond-linear", name: "PRISM" },
 ];

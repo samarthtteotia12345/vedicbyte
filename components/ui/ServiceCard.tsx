@@ -4,33 +4,16 @@ import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
 import { GlowCard } from "./GlowCard";
 
-interface CodeLine {
-  text: string;
-  color: "blue" | "orange" | "lime" | "muted" | "green";
-  indent?: number;
-  pulse?: boolean;
-}
-
 interface ServiceCardProps {
   title: string;
   description: string;
   icon: string;
   variant: "dark" | "light" | "accent" | "outline";
   size: "tall" | "wide" | "normal";
-  codeBlock?: {
-    lines: CodeLine[];
-  };
+  brandShowcase?: boolean;
   visual?: string;
   chart?: boolean;
 }
-
-const colorMap = {
-  blue: "text-blue-400",
-  orange: "text-orange-300",
-  lime: "text-[#D4FF33]",
-  muted: "text-neutral-600",
-  green: "text-green-300",
-};
 
 export function ServiceCard({
   title,
@@ -38,7 +21,7 @@ export function ServiceCard({
   icon,
   variant,
   size,
-  codeBlock,
+  brandShowcase,
   visual,
   chart,
 }: ServiceCardProps) {
@@ -104,59 +87,54 @@ export function ServiceCard({
           {description}
         </p>
 
-        {/* Code Block for Dark Variant */}
-        {codeBlock && variant === "dark" && (
-          <div className="mt-auto bg-neutral-950 rounded-xl border border-neutral-800 p-4 font-mono text-[10px] text-neutral-400 shadow-2xl">
-            <div className="flex gap-2 mb-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-500/20 border border-red-500/50" />
-              <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/20 border border-yellow-500/50" />
-              <span className="w-2.5 h-2.5 rounded-full bg-green-500/20 border border-green-500/50" />
+        {/* Brand Showcase for Dark Variant */}
+        {brandShowcase && variant === "dark" && (
+          <div className="mt-auto space-y-4">
+            <div className="flex gap-3">
+              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-vedic-lime/30 to-vedic-lime/10 border border-vedic-lime/20 flex items-center justify-center">
+                <Icon icon="solar:star-bold" className="text-vedic-lime" width={28} />
+              </div>
+              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500/30 to-purple-500/10 border border-purple-500/20 flex items-center justify-center">
+                <Icon icon="solar:palette-linear" className="text-purple-400" width={28} />
+              </div>
+              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500/30 to-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+                <Icon icon="solar:pen-new-square-linear" className="text-blue-400" width={28} />
+              </div>
             </div>
-            <div className="space-y-1.5">
-              {codeBlock.lines.map((line, i) => (
-                <p
-                  key={i}
-                  className={cn(
-                    colorMap[line.color],
-                    line.indent && `pl-${line.indent * 4}`,
-                    line.pulse && "animate-pulse"
-                  )}
-                  style={{ paddingLeft: line.indent ? line.indent * 16 : 0 }}
-                >
-                  {line.text}
-                </p>
-              ))}
+            <div className="flex items-center gap-2 text-xs text-neutral-500">
+              <span className="w-2 h-2 rounded-full bg-vedic-lime animate-pulse" />
+              <span>Building your brand identity...</span>
             </div>
           </div>
         )}
 
-        {/* AI Flow Visual for Wide Variant */}
-        {visual === "ai-flow" && (
+        {/* Content Flow Visual for Wide Variant */}
+        {visual === "content-flow" && (
           <div className="relative w-full md:w-1/2 h-48 md:h-full mt-8 md:mt-0 flex items-center justify-center md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:translate-x-8">
             <div className="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-neutral-100 p-4 space-y-3 group-hover:-translate-x-2 transition-transform duration-500">
               <div className="flex justify-between items-center text-xs text-neutral-400 border-b border-neutral-100 pb-2">
-                <span>AI Model #7</span>
+                <span>Content Pipeline</span>
                 <span className="text-green-600 bg-green-50 px-2 py-0.5 rounded">
-                  Active
+                  Publishing
                 </span>
               </div>
               <div className="flex gap-3 items-center">
-                <div className="w-8 h-8 rounded bg-purple-100 flex items-center justify-center text-purple-600">
-                  <Icon icon="solar:cpu-bolt-linear" />
+                <div className="w-8 h-8 rounded bg-amber-100 flex items-center justify-center text-amber-600">
+                  <Icon icon="solar:lightbulb-linear" />
                 </div>
                 <Icon
                   icon="solar:arrow-right-linear"
                   className="text-neutral-300"
                 />
-                <div className="w-8 h-8 rounded bg-blue-100 flex items-center justify-center text-blue-600">
-                  <Icon icon="solar:database-linear" />
+                <div className="w-8 h-8 rounded bg-purple-100 flex items-center justify-center text-purple-600">
+                  <Icon icon="solar:pen-new-square-linear" />
                 </div>
                 <Icon
                   icon="solar:arrow-right-linear"
                   className="text-neutral-300"
                 />
                 <div className="w-8 h-8 rounded bg-green-100 flex items-center justify-center text-green-600">
-                  <Icon icon="solar:check-circle-linear" />
+                  <Icon icon="solar:share-circle-linear" />
                 </div>
               </div>
             </div>
