@@ -157,16 +157,7 @@ export function ServiceCard({
           </div>
         )}
 
-        {/* Link for Outline Variant */}
-        {variant === "outline" && (
-          <a
-            href="#"
-            className="inline-flex items-center text-sm font-semibold text-neutral-900 hover:opacity-70 mt-auto"
-          >
-            Learn More{" "}
-            <Icon icon="solar:arrow-right-linear" className="ml-1" width={16} />
-          </a>
-        )}
+       
       </div>
     </GlowCard>
   );

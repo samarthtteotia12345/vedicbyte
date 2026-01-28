@@ -5,6 +5,8 @@ import { Hero } from "@/components/sections/Hero";
 import { LogoMarquee } from "@/components/sections/LogoMarquee";
 import { PainPoints } from "@/components/sections/PainPoints";
 import { ServicesBento } from "@/components/sections/ServicesBento";
+import { DifferentiatorsSection } from "@/components/sections/DifferentiatorsSection";
+import { GrowthServicesSection } from "@/components/sections/GrowthServicesSection";
 import { CaseStudy } from "@/components/sections/CaseStudy";
 
 export default function Home() {
@@ -21,6 +23,8 @@ export default function Home() {
         <div className="bg-white rounded-t-[40px] shadow-[0_-20px_60px_rgba(0,0,0,0.03)] relative z-20 ">
           <PainPoints />
           <ServicesBento />
+          <DifferentiatorsSection />
+          <GrowthServicesSection />
           <CaseStudy />
 
           <Footer />

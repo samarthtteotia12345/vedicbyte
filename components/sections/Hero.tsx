@@ -6,7 +6,7 @@ import { HERO_CONTENT, HERO_CARDS } from "@/lib/constants";
 
 export function Hero() {
   return (
-    <section className="max-w-[1400px] mx-auto px-6 pt-6 pb-6 md:pt-12 lg:pb-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section className="max-w-[1400px] mx-auto px-6 pt-6 pb-6 md:pt-8 lg:pb-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div className="lg:col-span-7 space-y-8 animate-fade-up">
         {/* Tag */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200 bg-white/50 backdrop-blur-sm text-xs font-medium text-neutral-600">
@@ -17,8 +17,7 @@ export function Hero() {
         {/* Headline */}
         <h1 className="md:text-7xl text-5xl  font-display font-medium tracking-tighter text-neutral-900 leading-[1] lg:leading-[0.95]">
           {HERO_CONTENT.headline.line1} <br />
-          <span className="text-neutral-400">{HERO_CONTENT.headline.line2}</span>{" "}
-          <br />
+
           {HERO_CONTENT.headline.line3}
         </h1>
 

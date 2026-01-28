@@ -1,10 +1,10 @@
-// Site content and copy - Marketing Agency focused
+// Site content and copy - GTM/B2B Enterprise focused
 
 export const SITE_CONFIG = {
   name: "Vedicbyte",
-  tagline: "Marketing That Moves Markets",
+  tagline: "Engineering Growth at Scale",
   description:
-    "Strategic marketing that builds brands and drives revenue. We craft compelling stories, create memorable campaigns, and deliver measurable growth.",
+    "We architect go-to-market strategies that transform ambitious companies into market leaders through technology-driven execution and AI-powered workflows.",
 };
 
 export const NAV_LINKS = [
@@ -14,17 +14,16 @@ export const NAV_LINKS = [
 ];
 
 export const HERO_CONTENT = {
-  badge: "Full-Service Marketing Agency",
+  badge: "GTM Strategy & Execution",
   headline: {
-    line1: "Building",
-    line2: "Brands",
-    line3: "That People Remember.",
-    highlight: "Brands",
+    line1: "Engineering Growth",
+    line3: "That Scales.",
+    highlight: "Growth",
   },
   description:
-    "Vedicbyte transforms ambitious companies into market leaders. We blend creative strategy, compelling storytelling, and data-driven campaigns to make your brand unforgettable.",
-  primaryCTA: "Start Your Project",
-  secondaryCTA: "View Our Work",
+    "Vedicbyte architects go-to-market strategies that transform ambitious companies into market leaders. We combine technology-driven execution, AI-powered workflows, and measurable outcomes.",
+  primaryCTA: "Accelerate Growth",
+  secondaryCTA: "See Our Impact",
 };
 
 export const HERO_CARDS = [
@@ -97,41 +96,41 @@ export const PAIN_POINTS = [
 
 export const SERVICES = [
   {
-    id: "brand-strategy",
-    title: "Brand Strategy & Identity",
+    id: "gtm-strategy",
+    title: "GTM Strategy & Architecture",
     description:
-      "We craft distinctive brand identities that stand out in crowded markets. From positioning to visual identity, we build brands that resonate and endure.",
-    icon: "solar:palette-linear",
+      "We architect go-to-market foundations that win. From market positioning and ICP definition to competitive differentiation, we build strategies that scale.",
+    icon: "solar:target-linear",
     variant: "dark" as const,
     size: "tall" as const,
     brandShowcase: true,
   },
   {
-    id: "content-marketing",
-    title: "Content & Storytelling",
+    id: "demand-generation",
+    title: "Demand Generation Engine",
     description:
-      "Compelling narratives that captivate your audience. We create content strategies and stories that build trust, drive engagement, and convert readers into customers.",
-    icon: "solar:pen-new-square-linear",
+      "Pipeline creation that compounds. We design and execute demand gen programs that drive qualified leads, nurture prospects, and optimize conversion at every stage.",
+    icon: "solar:magnet-linear",
     variant: "light" as const,
     size: "wide" as const,
     visual: "content-flow",
   },
   {
-    id: "digital-advertising",
-    title: "Digital Advertising",
+    id: "performance-marketing",
+    title: "Performance Marketing",
     description:
-      "Strategic campaigns across search, social, and display that maximize your marketing spend and deliver measurable results.",
+      "Precision targeting with measurable ROI. We optimize every dollar across channels with attribution modeling and continuous performance improvement.",
     icon: "solar:graph-up-linear",
     variant: "accent" as const,
     size: "normal" as const,
     chart: true,
   },
   {
-    id: "social-media",
-    title: "Social Media Marketing",
+    id: "thought-leadership",
+    title: "Community & Thought Leadership",
     description:
-      "Build communities, spark conversations, and grow your following with authentic social strategies that amplify your brand voice.",
-    icon: "solar:share-circle-linear",
+      "Build executive presence and industry influence. We craft thought leadership programs that establish trust and position your leaders as category experts.",
+    icon: "solar:users-group-rounded-linear",
     variant: "outline" as const,
     size: "normal" as const,
   },
@@ -177,19 +176,19 @@ export const CASE_STUDY = {
 };
 
 export const CTA_CONTENT = {
-  headline: "Ready to build a brand people love?",
+  headline: "Ready to engineer your growth?",
   primaryCTA: "Let's Talk Strategy",
   secondaryCTA: "See Case Studies",
 };
 
 export const FOOTER = {
   description:
-    "Full-service marketing agency specializing in brand strategy, content creation, digital advertising, and social media marketing.",
+    "GTM strategy and execution partner for ambitious B2B companies. We engineer growth through technology-driven marketing and AI-powered workflows.",
   services: [
-    "Brand Strategy",
-    "Content Marketing",
-    "Digital Advertising",
-    "Social Media",
+    "GTM Strategy",
+    "Demand Generation",
+    "Performance Marketing",
+    "Thought Leadership",
   ],
   company: ["About", "Careers", "Blog", "Contact"],
   copyright: `© ${new Date().getFullYear()} Vedicbyte. All rights reserved.`,
@@ -201,4 +200,51 @@ export const LOGO_MARQUEE = [
   { src: "/avi-spl.webp", name: "AVI-SPL" },
   { src: "/newera.webp", name: "New Era" },
   { src: "/presidio.webp", name: "Presidio" },
+];
+
+export const DIFFERENTIATORS = [
+  {
+    icon: "solar:code-square-linear",
+    title: "Deep technology DNA",
+    description: "Engineers and technologists who understand both code and commerce.",
+  },
+  {
+    icon: "solar:users-group-two-rounded-linear",
+    title: "Trusted growth partner",
+    description: "Long-term partnerships built on transparency and shared success.",
+  },
+  {
+    icon: "solar:cpu-bolt-linear",
+    title: "AI-Powered execution",
+    description: "Leverage cutting-edge AI to automate and optimize every workflow.",
+  },
+  {
+    icon: "solar:rocket-linear",
+    title: "Proven GTM accelerators",
+    description: "Battle-tested playbooks that compress time-to-market.",
+  },
+];
+
+export const GTM_SERVICES = [
+  {
+    title: "Embedded GTM operations",
+    description:
+      "Embedded strategy and execution support that meets you where you are – to ensure nothing falls through the crack.",
+    cta: "Run the engine",
+    icon: "solar:settings-minimalistic-linear",
+  },
+  {
+    title: "Scalable marketing execution",
+    description:
+      "Custom programs that combine market context, innovation and creativity for any segment, industry, and customer lifecycle stage.",
+    cta: "Feed the engine",
+    icon: "solar:chart-square-linear",
+  },
+  {
+    title: "AI-powered GTM workflows",
+    description:
+      "Workflows that bring the best human-to-AI mix to help you invent new experiences, operate at peak performance, and eliminate friction.",
+    cta: "Turbocharge the engine",
+    icon: "solar:cpu-bolt-linear",
+  },
 ];
