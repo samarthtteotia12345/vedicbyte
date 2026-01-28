@@ -10,7 +10,7 @@ export function PainPoints() {
           Is your marketing <span className="text-neutral-400">actually working?</span>
         </h2>
         <p className="text-neutral-500">
-          Most brands struggle with the same challenges. Here's what's holding you back.
+          Most brands struggle with the same challenges. Here is what holds you back.
         </p>
       </div>
 
