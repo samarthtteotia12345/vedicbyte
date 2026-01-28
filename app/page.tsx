@@ -6,7 +6,6 @@ import { LogoMarquee } from "@/components/sections/LogoMarquee";
 import { PainPoints } from "@/components/sections/PainPoints";
 import { ServicesBento } from "@/components/sections/ServicesBento";
 import { CaseStudy } from "@/components/sections/CaseStudy";
-import { CTASection } from "@/components/sections/CTASection";
 
 export default function Home() {
   return (
@@ -19,11 +18,11 @@ export default function Home() {
         <LogoMarquee />
 
         {/* Main Content Container */}
-        <div className="bg-white rounded-t-[40px] shadow-[0_-20px_60px_rgba(0,0,0,0.03)] relative z-20 pb-20">
+        <div className="bg-white rounded-t-[40px] shadow-[0_-20px_60px_rgba(0,0,0,0.03)] relative z-20 ">
           <PainPoints />
           <ServicesBento />
           <CaseStudy />
-          <CTASection />
+
           <Footer />
         </div>
       </main>

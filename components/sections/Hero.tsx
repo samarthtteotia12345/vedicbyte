@@ -1,7 +1,6 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import { Button } from "@/components/ui/Button";
 import { FloatingCard } from "@/components/ui/FloatingCard";
 import { HERO_CONTENT, HERO_CARDS } from "@/lib/constants";
 
@@ -26,15 +25,6 @@ export function Hero() {
         <p className="text-lg lg:text-xl text-neutral-500 max-w-2xl font-light leading-relaxed">
           {HERO_CONTENT.description}
         </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 pt-4">
-          <Button variant="primary" size="lg" icon="solar:scanner-linear">
-            {HERO_CONTENT.primaryCTA}
-          </Button>
-          <Button variant="outline" size="lg">
-            {HERO_CONTENT.secondaryCTA}
-          </Button>
-        </div>
       </div>
 
       {/* Hero Visuals */}

@@ -196,9 +196,9 @@ export const FOOTER = {
 };
 
 export const LOGO_MARQUEE = [
-  { icon: "solar:buildings-2-linear", name: "LUXE & CO" },
-  { icon: "solar:leaf-linear", name: "EVERGREEN" },
-  { icon: "solar:cup-star-linear", name: "STELLARIS" },
-  { icon: "solar:crown-linear", name: "MONARCH" },
-  { icon: "solar:diamond-linear", name: "PRISM" },
+  { src: "/ingram.webp", name: "Ingram Micro" },
+  { src: "/delloite.webp", name: "Deloitte" },
+  { src: "/avi-spl.webp", name: "AVI-SPL" },
+  { src: "/newera.webp", name: "New Era" },
+  { src: "/presidio.webp", name: "Presidio" },
 ];
